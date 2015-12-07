@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    tools:context="com.example.dreamaomao.bottombardemo.MainActivity">
+
+
+    <ImageView
+        android:src="@android:color/black"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="48dp"
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+
+    <LinearLayout
+        android:id="@+id/bottom_bars"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/darker_gray"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <ImageView
+            android:src="@mipmap/ic_launcher"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_weight="1"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:layout_gravity="bottom"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="76dp">
+
+            <ImageView
+                android:src="@mipmap/floatingmenu_action_bg"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="13dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:src="@mipmap/floatingmenu_action_saoyisao"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+        </RelativeLayout>
+
+
+        <ImageView
+            android:src="@mipmap/ic_launcher"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:src="@mipmap/ic_launcher"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+</RelativeLayout>
